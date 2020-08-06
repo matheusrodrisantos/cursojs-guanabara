@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Qual a sua nacionalidade</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <form>
+        Digite a sua nacionalidade 
+        <input type="text" id="txtnacionalidade">
+        <input type="button" value="enviar" onclick="tratar()">
+    </form>    
+    <div id="resultado">
+    </div>
+    <script>
+        function tratar()
+        {
+            var nacionalidade=window.document.querySelector("input#txtnacionalidade")
+            var res=window.document.querySelector("div#resultado")
+            if(nacionalidade.value=='Brasil')
+            {
+                res.innerHTML="Você é brasileiro!"
+            }
+            else
+            {
+                res.innerHTML="Você não é Brasileiro!"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<style>
+    body{
+        font: normal 20pt Arial;
+    }
+</style>
+<body>
+    <script>
+        var nome =window.prompt("Qual é o seu nome ?")
+        document.write(`Seu nome tem ${nome.length} letras<br>`);
+        document.write(`${nome.toLowerCase()}<br>`);
+        document.write(`${nome.toUpperCase()}<br>`);
+        let n1=2222.2
+        document.write(n1.toFixed(2))
+        document.write("<br>")
+        document.write(n1.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}))
+        
+    </script>
+</body>
+</html>

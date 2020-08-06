@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Velocidade do Carro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #Resultado{
+            color:#fff;
+            width: 400px;
+            height: 200px;
+
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="">
+        <label>Velocidade do carro</label>
+        <input type="number" name="txtvel" id="txtvel"> 
+        <input type="button" value="verificar" id="verificar" onclick="calcular()">
+    </form>
+    <div id="Resultado">
+    </div>
+    <script>
+       function calcular()
+       {
+            var velocidade=document.querySelector("input#txtvel")
+            var resultado=document.querySelector("div#Resultado")
+            if(velocidade.value>60){
+                resultado.style.background="rgb(173, 36, 36)"
+                resultado.innerHTML="A sua velocidade é maior do que o permitido.<br/>"
+                resultado.innerHTML+=`Velocidade permitida: 60 KM/H<br/>`
+                resultado.innerHTML+=`Sua Velocidade:${velocidade.value} KM/H`
+            }
+            else{
+                resultado.innerHTML="Prossiga com cuidado!"
+                resultado.style.background="rgb(13, 168, 47)"
+            }
+       }
+    </script>
+</body>
+</html>
