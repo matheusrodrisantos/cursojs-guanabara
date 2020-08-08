@@ -41,9 +41,7 @@ function resumir()
         {
             somatorio=somatorio+numeros[c];
         }
-        console.log('----------------\n')
-        console.log(typeof(numeros))
-        console.log('----------------')
+
         media=somatorio/numeros.length
 
         resumo.innerHTML+=`<p>Ao todo temos ${numeros.length} números cadastrados</p>`                
